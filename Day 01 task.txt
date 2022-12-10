@@ -1,0 +1,41 @@
+1. Write a blog on Difference between HTTP1.1 vs HTTP2
+	
+HTTP1.1
+Year-1997
+
+Key Features - It supports connection reuse  for every TCP connection
+
+Status Code - Introduces a warning header field to carry additional information about the status of a message. Can define 24 status codes  error reporting is quicker and more efficient
+
+Authentication Mechanism - It is relatively secure since it uses digest authentication NTLM authentication.
+
+Caching - Expands on the caching support by using additional headers like cache-control conditional headers like If-Match and by using entity tags
+
+Web Traffic - HTTP/1.1 provides faster delivery of web pages and reduces web traffic 
+
+HTTP2
+Year-2015
+
+Key Features - Uses multiplexing where over a single TCP connection
+
+Status Code   - Underlying semantics of HTTP such as headers status codes remains the same.
+
+Authentication Mechanism - Security concerns from previous versions will continue to be seen in HTTP/2 . it is better equipped to deal with them due to new TLS features like connection error of type Inadequate_Security.
+
+Caching - HTTP/2 does not change much in terms of caching.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+Web Traffic - HTTP/2 utilizes multiplexing and server push to effectively reduce the page load time
+2.Write a blog about objects and its internal representation in Javascript
+
+ Objects are important data types in javascript. 
+Objects are different then primitive data types (number, string, boolean, etc.). Primitive data types contain one value but Objects can hold many values in the form of Key: value pair. These keys can be variables or functions and are called properties and methods respectively, in the context of an object.
+Every object has some property associated with some value. These values can be accessed using these properties associated with them.
+var myCar = new Object();
+myCar.make = 'Rolls Royce';
+myCar.model = 'Ghost';
+myCar.year = 2009;
+myCar.wheels = 4;
+After creating myCar object, the value inside the object can be accessed using keys.
+myCar.year
+Output: 2009
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
