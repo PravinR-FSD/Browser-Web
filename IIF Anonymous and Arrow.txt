@@ -1,0 +1,203 @@
+							Anonymous Function
+
+a)Odd numbers in an array
+			function(arr){
+                  for(var i = 0 ; i< arr.length ; i++){
+                        if(arr[i]%2!=0){
+                           console.log(arr[i])
+                        } 
+                   }
+                }             
+                        
+b)Convert all the strings to title caps in a string array
+   
+			  function (str) {
+                    str = str.toLowerCase().split(' ');
+                    for (var i = 0; i < str.length; i++) {
+                      str[i] = str[i].charAt(0).toUpperCase() + str[i].slice(1); 
+                    } 
+                    return str.join(' ');
+                  }
+
+           
+c)Sum of all numbers in an array 
+			function(arr){
+                  var sum = 0;
+                  for(var i = 0 ; i< arr.length ; i++){
+                     sum = sum + arr[i];
+                   }
+                   return sum;
+                }
+
+d)Return all the prime numbers in an array
+                 	    function(numArr){
+                      numArr = numArr.filter((number) => {
+                        for (var i = 2; i <= Math.sqrt(number); i++) {
+                          if (number % i === 0) return false;
+                        }
+                        return true;
+                      });
+                      console.log(numArr);
+                  }
+                  
+e)  Return all the palindromes in an array
+
+	function ispalindrome(N)
+       {
+        let str = "" + N;
+        let len = str.length;
+        for (let i = 0; i < parseInt(len / 2, 10); i++)
+        {
+            if (str[i] != str[len - 1 - i ])
+                return false;
+        }
+        return true;
+    }
+    
+   function (arr, n)
+    {
+       
+        for (let i = 0; i < n; i++)
+        {
+            let ans = ispalindrome(arr[i]);
+            if (ans == false)
+                return false;
+        }
+        return true;
+    }
+------------------------------------------------------------------------------------------------------------------------------------------
+									IIFE function
+
+a)   Odd numbers in an array
+
+  		 (function(array){
+             for(var i = 0 ; i< array.length ; i++){
+                        if(array[i]%2!=0){
+                           console.log(array[i])
+                        } 
+                   }
+             })([1,2,3,4])
+
+b)Convert all the strings to title caps in a string array
+
+		 (function (str) {
+                    str = str.toLowerCase().split(' ');
+                    for (var i = 0; i < str.length; i++) {
+                      str[i] = str[i].charAt(0).toUpperCase() + str[i].slice(1); 
+                    } 
+                    return str.join(' ');
+                  })("MY NAME IS ABD");
+
+c)Sum of all numbers in an array
+
+	    (function(arr){
+             var sum = 0;
+                  for(var i = 0 ; i< arr.length ; i++){
+                     sum = sum + arr[i];
+                   }
+                   return sum;
+             })([1,2,3,4])
+
+d)Return all the prime numbers in an array
+                   (function(numArr){
+                      numArr = numArr.filter((number) => {
+                        for (var i = 2; i <= Math.sqrt(number); i++) {
+                          if (number % i === 0) return false;
+                        }
+                        return true;
+                      });
+                      console.log(numArr);
+                  })([1,2,3,4])
+
+e)  Return all the palindromes in an array
+
+function ispalindrome(N)
+    {
+        let str = "" + N;
+        let len = str.length;
+        for (let i = 0; i < parseInt(len / 2, 10); i++)
+        {
+            if (str[i] != str[len - 1 - i ])
+                return false;
+        }
+        return true;
+    }
+              (  function (arr, n)
+        {
+            for (let i = 0; i < n; i++)
+            {
+                let ans = ispalindrome(arr[i]);
+                if (ans == false)
+                    return false;
+            }
+            return true;
+        })([1,2,3] , 3)
+--------------------------------------------------------------------------------------------------------------------------------------------------
+									Arrow Function    
+
+a)Odd numbers in an array
+
+		oddNumbers = (arr) => {
+                   for(var i = 0 ; i< arr.length ; i++){
+                        if(arr[i]%2!=0){
+                           console.log(arr[i])
+                        } 
+                   }
+                        }
+
+b)Convert all the strings to title caps in a string array
+
+ 			 titleCase = (str) => {
+                    str = str.toLowerCase().split(' ');
+                    for (var i = 0; i < str.length; i++) {
+                      str[i] = str[i].charAt(0).toUpperCase() + str[i].slice(1); 
+                    } 
+                    return str.join(' ');
+                  } 
+
+c)Sum of all numbers in an array
+	       sum = (arr)=>{
+             var sum = 0;
+                  for(var i = 0 ; i< arr.length ; i++){
+                     sum = sum + arr[i];
+                   }
+                   return sum;
+                   }
+
+d)Return all the prime numbers in an array
+    
+       primeNumber = (numArr) => {
+                      numArr = numArr.filter((number) => {
+                        for (var i = 2; i <= Math.sqrt(number); i++) {
+                          if (number % i === 0) return false;
+                        }
+                        return true;
+                      });
+                      console.log(numArr);
+                  }
+
+e)  Return all the palindromes in an array
+
+function ispalindrome(N)
+    {
+        let str = "" + N;
+        let len = str.length;
+        for (let i = 0; i < parseInt(len / 2, 10); i++)
+        {
+            if (str[i] != str[len - 1 - i ])
+                return false;
+        }
+        return true;
+    }
+palindrome = (arr, n) =>
+    {
+        for (let i = 0; i < n; i++)
+        {
+            let ans = ispalindrome(arr[i]);
+            if (ans == false)
+                return false;
+        }
+        return true;
+    }
+
+
