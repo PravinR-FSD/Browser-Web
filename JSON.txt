@@ -1,0 +1,111 @@
+Resume In JSON format : 
+
+{
+  "Basic":{
+             "Name":"Pravin R",
+             "Phone Number":88,
+             "Mail ID":"pra@gmail.com"
+  },
+  "Address":{
+ 	 "Door No": "No, 9 aarthi bharani cottage",
+     	 "Street":"Syed Hazad street",
+ "area": "Arisipalayam",
+ "City":"Salem",
+    	 "City code":636009,
+             "State":"Tamilnadu",
+             "Country":"India"
+    
+  },
+
+  "Experience":
+    {
+   	 "Company":"Indecomm Business Services",
+   	   "Designation" :"Associate",
+   	   "Level":"J",
+    	  "Year of expirence" : 2
+    },  
+
+  "Education":[ 
+  {
+"College": "The kongu polytecnic college",
+   	 "Department":"Mechanical",
+  	  "Period Type" : "Full time",
+  	   "%" : "76.2",
+  "Past Out year" :"2019"
+  },   
+    {
+      	"Standard":"HSC",
+     	 "Institute":"Sri Sarada institute",
+     	 "Type": "Full time",
+     	 "%":"72.3",
+    	  "Passed Out year": "2016"
+    },
+    
+    {
+     	  "Standard":"SSLC",
+     	 "Institute":"Sri Sarada institute",
+     	 "Type": "Full time",
+     	 "%":"62.5",
+      	"Passed out year": "2014"
+    }
+
+  ],
+"Skill" : 
+{
+"Course" : "FSD",
+ 	 "Level":"Begineer"
+},
+ 	 "Language":{
+ 	 "Tamil":" Read, write, speak",
+ 	 "English": "Read, write, speak"
+     },
+  "Award": 
+{
+  	  "Q1 Winner":"Star performance in my team ",
+   	 "Essay":"Swami Vivekananda Chicago lectures 125th year celebration"
+  },
+
+  "Social Activites":
+  {
+  	  "NSS":"Former NSS team member in College",
+   	   "NCC":"Former NCC in School team"
+    
+  }
+}
+
+—---------------------------------------------------------------------------------------------------------------------------
+JSON iterated
+For:
+var json ={
+jsonData:{
+"name":"Rajan",
+}
+};
+for (var key in json.jsonData){
+	for(var key1 in json.jsonData[key]){
+  console.log(json.jsonData[key][key1]);
+  }
+}
+
+For in:
+var person = {
+   firstname: "Nicholas",
+   lastname: "Christ",
+   age: 26
+}; 
+for (let x in person) {
+   console.log(x + ": "+ person[x])
+}
+
+
+For of:
+const mark = ["90", "89", "93"];
+for (let element of mark){
+console.log(element);
+}
+
+For Each:
+let Name = ['Raj', 'shree', 'Franklin'];
+students.forEach(myFunction);
+function myFunction(item) {
+console.log(item);
